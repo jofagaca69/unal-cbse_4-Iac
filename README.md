@@ -42,7 +42,6 @@ terraform destroy
 
 Estructura del Proyecto
 
-
 📂 proyecto-gke/
 ├── 📂 iac-laboratory/           # Configuración de infraestructura como código (IaC) usando Terraform
 │   ├── main.tf                  # Archivo principal de configuración de Terraform
