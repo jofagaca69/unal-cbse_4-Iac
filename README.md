@@ -42,19 +42,22 @@ terraform destroy
 
 Estructura del Proyecto
 
-📂 proyecto-gke/
-├── 📂 iac-laboratory/           # Configuración de infraestructura como código (IaC) usando Terraform
-│   ├── main.tf                  # Archivo principal de configuración de Terraform
-│   ├── variables.tf             # Definición de variables para personalización
-│   ├── terraform.tfvars         # Valores específicos de variables
-│   ├── 📂 modules/              # Módulos para la organización de recursos de infraestructura
-│   │   ├── Apis/                # Módulo para configuraciones de APIs en GCP
-│   │   │   ├── main.tf          # Configuración de habilitación de APIs
-│   │   │   └── variables.tf     # Variables específicas del módulo Apis
-│   │   ├── Kubernetes/          # Módulo para configuración de recursos de Kubernetes
-│   │   │   ├── main.tf          # Creación del cluster y recursos de GKE
-│   │   │   ├── pods.tf          # Configuración de pods de Kubernetes para microservicios
-│   │   │   ├── services.tf      # Configuración de servicios en Kubernetes para balanceo de carga
-│   │   └── Registry/            # Módulo para configuración del Artifact Registry
-│   │       ├── main.tf          # Creación y permisos para Artifact Registry
-│   │       └── variables.tf     # Variables específicas del módulo Registry
+proyecto-gke/
+├── iac-laboratory/                      # Configuración de infraestructura como código (IaC) usando Terraform
+│   ├── main.tf                          # Archivo principal de configuración de Terraform
+│   ├── variables.tf                     # Definición de variables para personalización
+│   ├── terraform.tfvars                 # Valores específicos de variables
+│   
+│   ├── modules/                         # Módulos para la organización de recursos de infraestructura
+│   │   ├── Apis/                        # Módulo para configuraciones de APIs en GCP
+│   │   │   ├── main.tf                  # Configuración de habilitación de APIs
+│   │   │   └── variables.tf             # Variables específicas del módulo Apis
+│   │   
+│   │   ├── Kubernetes/                  # Módulo para configuración de recursos de Kubernetes
+│   │   │   ├── main.tf                  # Creación del cluster y recursos de GKE
+│   │   │   ├── pods.tf                  # Configuración de pods de Kubernetes para microservicios
+│   │   │   ├── services.tf              # Configuración de servicios en Kubernetes para balanceo de carga
+│   │   
+│   │   └── Registry/                    # Módulo para configuración del Artifact Registry
+│   │       ├── main.tf                  # Creación y permisos para Artifact Registry
+│   │       └── variables.tf
